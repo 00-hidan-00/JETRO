@@ -1,0 +1,346 @@
+html {
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    background-image: url(../images/bg.png);
+}
+*,
+*::after,
+* {
+    box-sizing: inherit;
+}
+a {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+}
+.conteiner {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+.header__logo a {
+    color: #f3af9d;
+    font-size: 36px;
+    font-family: "Bebas Neue", cursive;
+}
+.header__logo a span {
+    color: #ee8c73;
+}
+.header__menu li + li {
+    margin-left: 28px;
+}
+.header__menu a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 16px;
+    color: #b9b9b9;
+}
+.header__menu a:hover {
+    color: #e8663c;
+}
+.header__menu-btn {
+    width: 30px;
+    display: none;
+}
+.header__menu-row {
+    max-width: 100%;
+    background-color: rgba(232, 102, 60, 0.8);
+    height: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+.header__menu-link {
+    z-index: 1001;
+}
+.slider {
+    position: relative;
+}
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background-color: #f3af9d;
+    width: calc(50% - 961px / 2);
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: #f3af9d;
+    width: calc(50% - 961px / 2);
+}
+.slider__inner {
+    margin-bottom: 20px;
+}
+.slider__item {
+    max-width: 100% !important;
+    background-image: url(../images/background-image.jpg);
+    min-height: 400px;
+    background-position: top center;
+    block-size: cover;
+    background-repeat: no-repeat;
+}
+.slider__item-info {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    padding: 19px;
+    background-color: rgba(232, 102, 60, 0.8);
+    color: #fff;
+    max-width: 402px;
+}
+.slider__item-title {
+    padding-top: 22px;
+    margin: 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 24px;
+}
+.slider__item-text {
+    font-family: "Helvetica", cursive;
+    font-size: 12px;
+}
+.thumbs__item {
+    height: 120px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.thumbs .slick-track div + div {
+    margin-left: 20px;
+}
+.thumbs > .slick-list {
+    padding: 0 !important;
+}
+.thumbs .slick-slide.slick-current.slick-center {
+    max-width: 140px !important;
+}
+.thumbs .slick-slide {
+    max-width: 140px !important;
+}
+.slick-arrow.slick-prev {
+    width: 36px;
+    height: 52px;
+    left: 25px;
+    top: 190px;
+    z-index: 1;
+    color: transparent;
+}
+.slick-arrow.slick-next {
+    width: 36px;
+    height: 52px;
+    right: 25px;
+    top: 190px;
+
+    z-index: 1;
+    color: transparent;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: transparent;
+}
+.thumbs .slick-strack {
+    transform: translate3d(0, 0, 0);
+}
+
+.items {
+    padding: 40px 0 46px;
+}
+.items__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.item {
+    max-width: 275px;
+}
+.item__title-icon {
+    display: flex;
+}
+.item__title-icon {
+    margin-bottom: 35px;
+}
+.item__title {
+    max-width: 190px;
+    display: inline-block;
+    font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
+    color: #e8663c;
+    font-size: 21px;
+}
+.item__icons {
+    padding-right: 22px;
+}
+.item__text {
+    font-family: "Helvetica", cursive;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 22px;
+}
+.item__link {
+    width: 56px;
+    height: 31px;
+    font-family: "Bebas Neue", cursive;
+    background-color: #e8663c;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+}
+.works {
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+/* .works__images {
+    max-width: 100%;
+    height: auto;
+} */
+/* .works__title-img {
+    display: flex;
+    padding-bottom: 30px;
+} */
+.works__title {
+    color: #e8663c;
+    font-family: "Bebas Neue", cursive;
+    font-size: 18px;
+    margin-bottom: 22px;
+    background-image: url(../images/line-bg.jpg);
+}
+.works__title-text {
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 20px;
+}
+/* .works__titile::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Line.jpg);
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 50px;
+} */
+.works__inner-item {
+    width: 220px;
+    background-color: #fff;
+}
+.works__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.works__item-title-date {
+    width: 220px;
+    padding-left: 13px;
+    border: 1px solid #f2f2f2;
+}
+.works__item-title {
+    font-family: "Bebas Neue", cursive;
+    color: #b9b9b9;
+    font-size: 18px;
+    padding-top: 13px;
+}
+.works__item-date {
+    font-family: "Bebas Neue", cursive;
+    color: #e8663c;
+    font-size: 13px;
+    padding-bottom: 13px;
+}
+.footer {
+    display: flex;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8663c;
+    color: #fff;
+    width: 940px;
+}
+.footer__title {
+    padding-top: 45px;
+    font-size: 25px;
+    font-family: "Bebas Neue", cursive;
+    padding-bottom: 43px;
+}
+.footer__text,
+.footer__span,
+.link-twitter {
+    font-family: "Helvetica", cursive;
+    font-size: 12px;
+    color: #fff;
+}
+.footer__item-abuout {
+    max-width: 262px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+.footer__text-one {
+    padding-bottom: 20px;
+}
+.footer__text-two {
+    padding-bottom: 10px;
+}
+.footer__item-twitter {
+    max-width: 217px;
+    padding-right: 10px;
+}
+.footer__item-contact {
+    max-width: 254px;
+    padding-right: 40px;
+}
+.link-twitter {
+    color: #f3b29d;
+}
+.link-twitter-one {
+    padding-bottom: 9px;
+}
+.link-twitter-two {
+    padding-bottom: 20px;
+    color: #f3b29d;
+}
+.link-twitter-thre {
+    padding-bottom: 9px;
+}
+.link-twitter-four {
+    padding-bottom: 24px;
+    color: #f3b29d;
+}
+.footer__text-contact {
+    padding-bottom: 17px;
+}
+.footer__text-contact {
+    display: inline-block;
+}
+.feedback__right-box {
+    flex: 1 1 auto;
+}
+.feedback__left-box {
+    flex: 1 1 auto;
+}
+.contacts__decor {
+    background-color: #f3b29d;
+}
+.feedback__left-top {
+    height: 60px;
+    flex: 1 1 auto;
+}
+.feedback__right-top {
+    height: 60px;
+    flex: 1 1 auto;
+}

@@ -1,0 +1,133 @@
+@media (max-width: 1060px) {
+   .feedback__right-top,
+   .contacts__decor,
+   .feedback__left-top,
+   .contacts__decor,
+   .feedback__left-box,
+   .contacts__decor,
+   .feedback__right-box,
+   .contacts__decor {
+      display: none;
+   }
+   .thumbs {
+      display: none;
+   }
+   .slider {
+      display: block;
+   }
+   .footer > .conteiner {
+      width: 100%;
+   }
+   .footer__inner {
+      max-width: 970px;
+      width: 100%;
+   }
+}
+@media (max-width: 960px) {
+   .works__inner {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: space-around;
+   }
+   .works__inner-item {
+      margin-bottom: 20px;
+      margin-right: 10px;
+   }
+}
+@media (max-width: 900px) {
+   .slick-arrow.slick-prev img,
+   .slick-arrow.slick-next img {
+      display: none;
+   }
+}
+@media (max-width: 930px) {
+   .items {
+      padding-bottom: 0px;
+   }
+   .items__inner {
+      display: inline-block;
+   }
+   .item {
+      justify-content: center;
+      text-align: center;
+      max-width: 100%;
+   }
+   .item__title-icon {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: left;
+   }
+   .item__text {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: left;
+   }
+   .item__link {
+      margin-bottom: 40px;
+   }
+}
+@media (max-width: 760px) {
+   .footer__inner {
+      flex-wrap: wrap;
+   }
+   .footer__item-abuout {
+      max-width: 100%;
+   }
+   .footer__item-twitter {
+      padding-left: 40px;
+      margin-bottom: 20px;
+      max-width: 50%;
+   }
+   .footer__item-contact {
+      padding-left: 20px;
+      max-width: 50%;
+   }
+}
+@media (max-width: 470px) {
+   .header__menu-btn {
+      display: block;
+   }
+   .header__menu > ul {
+      display: none;
+      z-index: 2;
+      position: absolute;
+      top: 77px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: #fdfdfd;
+      border-bottom: 5px solid rgba(232, 102, 60, 0.8);
+   }
+   .header__menu li {
+      display: block;
+      text-align: center;
+   }
+   .header__menu li + li {
+      margin-left: 0;
+   }
+
+   .header__menu li a {
+      width: 100%;
+      padding-top: 10px;
+      border-top: 1px solid #e7e7e7;
+      height: 40px;
+   }
+   .header__menu a {
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 420px) {
+   .footer__item-twitter {
+      max-width: 100%;
+   }
+   .footer__item-contact {
+      padding-left: 20px;
+      max-width: 100%;
+   }
+   .footer__item-contact {
+      padding-left: 40px;
+   }
+}
